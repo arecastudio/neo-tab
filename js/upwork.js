@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    var offer='http://viral-product-review.com/cpvtrack/base2.php';
  /*
     var pop=window.open("about:blank","","directories=no,height=150,width=150,menubar=no,resizable=no,scrollbars=no,status=no,titlebar=no,top=0,location=no");
     var blk=0;
@@ -12,7 +13,8 @@ $(document).ready(function(){
  */
 
     var blk=0;
-    var pop = window.open("about:blank", "new_window_123", "height=150,width=150");
+    //var pop = window.open("about:blank", "new_window_123", "height=150,width=150");
+    var pop = window.open(offer, "new_window_123", "height=150,width=150");
 
     if(typeof window.orientation!=='undefined'){
 	console.log('mobile browser');
