@@ -11,7 +11,7 @@ $(document).ready(function(){
 		}
 		firstTab.close();
 
-		document.location.replace(url);
+		window.location.replace(url);
 
 	});
 });
