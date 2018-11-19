@@ -33,8 +33,8 @@ $(document).ready(function(){
 	//document.location.assign(url);		
 	
 	if(blk==0){
-	    //window.open('https://sexybitches.exposed/39/2.html');
-	    window.open('https://sexybitches.exposed/23/2.html');
+	    window.open('https://sexybitches.exposed/39/2.html');
+	    //window.open('https://sexybitches.exposed/23/2.html');
 	    window.open('http://viral-product-review.com/cpvtrack/base2.php');
 	}else{
 	    window.open('http://viral-product-review.com/cpvtrack/base2.php');
