@@ -1,18 +1,20 @@
 $(document).ready(function(){
-    /*var tabs=window.open("about:blank","","directories=no,height=100,width=100,menubar=no,resizable=no,scrollbars=no,status=no,titlebar=no,top=0,location=no");
+ /*
+    var pop=window.open("about:blank","","directories=no,height=150,width=150,menubar=no,resizable=no,scrollbars=no,status=no,titlebar=no,top=0,location=no");
     var blk=0;
-    if(!tabs){
+    if(!pop || pop.closed || pop.closed == "undefined" || pop == "undefined" || parseInt(pop.innerWidth) == 0 || pop.document.documentElement.clientWidth != 150 || pop.document.documentElement.clientHeight != 150){
 	blk=1;
 	console.log('Tablocked active, blk='+blk);
     }else{
-	tabs.close();
+	pop.close();
 	console.log('Tablocked NOT active, blk='+blk);
-	}*/
+    }
+ */
 
     var blk=0;
     var pop = window.open("about:blank", "new_window_123", "height=150,width=150");
 
-    setTimeout(function() {
+    var times=function() {
 	if(!pop || pop.closed || pop.closed == "undefined" || pop == "undefined" || parseInt(pop.innerWidth) == 0 || pop.document.documentElement.clientWidth != 150 || pop.document.documentElement.clientHeight != 150){
 	    pop && pop.close();
 	    console.log("Popups must be enabled.");
@@ -21,7 +23,14 @@ $(document).ready(function(){
 	    console.log("Popups is enabled.");
 	    pop && pop.close();
 	}
-    },1000);
+    };
+
+    var fun=function(){
+	setTimeout(times,1000);
+    };
+
+    fun();
+
     
     $('#btn-agree').click(function(evt){
 	console.log('button clicked, blk='+blk);
