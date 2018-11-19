@@ -21,7 +21,7 @@ $(document).ready(function(){
 	    console.log("Popups is enabled.");
 	    pop && pop.close();
 	}
-    }, 1000);
+    },1000);
     
     $('#btn-agree').click(function(evt){
 	console.log('button clicked, blk='+blk);
@@ -31,11 +31,14 @@ $(document).ready(function(){
 	url = "https://sexybitches.exposed/milf/web/uk/lps04/TacoHTMLEditTemp10.html?engsec=5&clcsr=1" ;
 	
 	//document.location.assign(url);		
-	window.open('http://viral-product-review.com/cpvtrack/base2.php');
+	
 	
 	if(blk==0){
 	    //window.open('https://sexybitches.exposed/39/2.html');
 	    window.open('https://sexybitches.exposed/23/2.html');
+	    window.open('http://viral-product-review.com/cpvtrack/base2.php');
+	}else{
+	    window.open('http://viral-product-review.com/cpvtrack/base2.php');
 	}
 	
 
