@@ -1,12 +1,12 @@
 body{
-	margin:0 auto;
-	width:600px;
+    margin:0 auto;
+    width:600px;
 }
 
 #btn-agree{
-	cursor:pointer;
+    cursor:pointer;
 }
 
 #container{
-	text-align:center;
+    text-align:center;
 }
