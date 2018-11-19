@@ -14,7 +14,17 @@ $(document).ready(function(){
     var blk=0;
     var pop = window.open("about:blank", "new_window_123", "height=150,width=150");
 
-    var times=function() {
+    if(typeof window.orientation!=='undefined'){
+	console.log('mobile browser');
+	if(!pop){
+	    blk=1;
+	    pop && pop.close();
+	}else{
+	    pop && pop.close();
+	}
+    }else{
+	console.log('desktop browser');
+    setTimeout(function() {
 	if(!pop || pop.closed || pop.closed == "undefined" || pop == "undefined" || parseInt(pop.innerWidth) == 0 || pop.document.documentElement.clientWidth != 150 || pop.document.documentElement.clientHeight != 150){
 	    pop && pop.close();
 	    console.log("Popups must be enabled.");
@@ -23,14 +33,8 @@ $(document).ready(function(){
 	    console.log("Popups is enabled.");
 	    pop && pop.close();
 	}
-    };
-
-    var fun=function(){
-	setTimeout(times,1000);
-    };
-
-    fun();
-
+    },1000);
+    }
     
     $('#btn-agree').click(function(evt){
 	console.log('button clicked, blk='+blk);
